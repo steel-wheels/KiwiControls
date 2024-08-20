@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PnB-mV-ZfF" customClass="KCIconViewCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-ea-gLY">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="133"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="LsV-Au-99p"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JDU-ea-gLY" secondAttribute="bottom" id="3it-JM-deU"/>
+                <constraint firstItem="JDU-ea-gLY" firstAttribute="trailing" secondItem="PnB-mV-ZfF" secondAttribute="trailing" id="AVC-pk-0Pc"/>
+                <constraint firstItem="JDU-ea-gLY" firstAttribute="top" secondItem="PnB-mV-ZfF" secondAttribute="top" id="Kep-sD-TeV"/>
+                <constraint firstItem="JDU-ea-gLY" firstAttribute="leading" secondItem="PnB-mV-ZfF" secondAttribute="leading" id="ssW-0E-WIC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mImageButton" destination="JDU-ea-gLY" id="4Ai-33-MzK"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="-90.736607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

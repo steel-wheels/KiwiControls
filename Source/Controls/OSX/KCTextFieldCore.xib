@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCTextFieldCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField identifier="The" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SEz-UO-rmk">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="xhE-3F-X4M">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SEz-UO-rmk" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="062-s3-UKX"/>
+                <constraint firstItem="SEz-UO-rmk" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="SKE-sV-mJL"/>
+                <constraint firstAttribute="trailing" secondItem="SEz-UO-rmk" secondAttribute="trailing" id="ee1-wX-BAB"/>
+                <constraint firstAttribute="bottom" secondItem="SEz-UO-rmk" secondAttribute="bottom" id="pJd-E0-KgW"/>
+            </constraints>
+            <connections>
+                <outlet property="mTextField" destination="SEz-UO-rmk" id="az7-aq-aLC"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

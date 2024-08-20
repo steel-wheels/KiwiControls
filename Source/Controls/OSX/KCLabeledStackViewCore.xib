@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCLabeledStackViewCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ECF-jm-CFL" customClass="KCTextField" customModule="KiwiControls" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="176" width="400" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="gnj-u9-5VD"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="4WE-Eu-JfE" customClass="KCStackView" customModule="KiwiControls" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="168"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4WE-Eu-JfE" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="0Ek-L9-a5e"/>
+                <constraint firstItem="4WE-Eu-JfE" firstAttribute="top" secondItem="ECF-jm-CFL" secondAttribute="bottom" constant="8" symbolic="YES" id="4VU-L6-7SR"/>
+                <constraint firstAttribute="trailing" secondItem="4WE-Eu-JfE" secondAttribute="trailing" id="8B7-9b-vUF"/>
+                <constraint firstAttribute="bottom" secondItem="4WE-Eu-JfE" secondAttribute="bottom" id="Vh0-Y8-2HE"/>
+                <constraint firstAttribute="trailing" secondItem="ECF-jm-CFL" secondAttribute="trailing" id="jRP-Sa-nuh"/>
+                <constraint firstItem="ECF-jm-CFL" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="kko-pT-KcB"/>
+                <constraint firstItem="ECF-jm-CFL" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="riG-ZF-pkk"/>
+            </constraints>
+            <connections>
+                <outlet property="mLabel" destination="ECF-jm-CFL" id="U64-AS-9do"/>
+                <outlet property="mStack" destination="4WE-Eu-JfE" id="IHT-Zd-Tk6"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="123"/>
+        </customView>
+    </objects>
+</document>

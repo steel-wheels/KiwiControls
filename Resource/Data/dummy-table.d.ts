@@ -1,0 +1,4 @@
+interface RecordIF {
+	dummy: number
+}
+

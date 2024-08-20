@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCRadioButtonCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="16"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-RE-7WL">
+                    <rect key="frame" x="-2" y="-1" width="156" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="yeD-aC-eKa">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonPressed:" target="c22-O7-iKe" id="XbJ-Ae-rKe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b1j-RE-7WL" secondAttribute="trailing" id="0IJ-kX-9Fp"/>
+                <constraint firstItem="b1j-RE-7WL" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="G53-7h-Awu"/>
+                <constraint firstItem="b1j-RE-7WL" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="QrP-Bu-5ms"/>
+                <constraint firstAttribute="bottom" secondItem="b1j-RE-7WL" secondAttribute="bottom" id="mtL-Cs-zdQ"/>
+            </constraints>
+            <connections>
+                <outlet property="mRadioButton" destination="b1j-RE-7WL" id="Npj-Ib-iRD"/>
+            </connections>
+            <point key="canvasLocation" x="-97" y="9"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KCNavigationBarCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohh-25-tiB">
+                    <rect key="frame" x="0.0" y="0.0" width="154" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="ynG-XF-IlQ">
+                            <barButtonItem key="leftBarButtonItem" title="Left" id="hej-Tn-tuT">
+                                <connections>
+                                    <action selector="leftButtonPressed:" destination="iN0-l3-epB" id="dHh-Ht-CHX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Right" id="phc-7S-f7u">
+                                <connections>
+                                    <action selector="rightButtonPressed:" destination="iN0-l3-epB" id="wWw-qj-0r2"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ohh-25-tiB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="J89-vR-dlV"/>
+                <constraint firstItem="ohh-25-tiB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="otB-h2-57n"/>
+                <constraint firstItem="ohh-25-tiB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rGA-M8-mbr"/>
+                <constraint firstItem="ohh-25-tiB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ugN-pB-ic1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftBarButton" destination="hej-Tn-tuT" id="gEE-CB-ka3"/>
+                <outlet property="mNavigationBar" destination="ohh-25-tiB" id="eVi-G2-Jpf"/>
+                <outlet property="mNavigationItem" destination="ynG-XF-IlQ" id="Pxu-br-jxA"/>
+                <outlet property="rightBarButton" destination="phc-7S-f7u" id="r6P-ns-0Nc"/>
+            </connections>
+            <point key="canvasLocation" x="-113.59999999999999" y="-178.11094452773614"/>
+        </view>
+    </objects>
+</document>

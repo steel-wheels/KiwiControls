@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCColorSelectorCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="Ezs-pg-9oU">
+                    <rect key="frame" x="-3" y="-2" width="70" height="44"/>
+                    <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="performClick:" target="-1" id="GUc-pd-vmt"/>
+                    </connections>
+                </colorWell>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ezs-pg-9oU" secondAttribute="trailing" id="4V0-2g-uME"/>
+                <constraint firstItem="Ezs-pg-9oU" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="NsV-Fg-mLy"/>
+                <constraint firstItem="Ezs-pg-9oU" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="SVt-G5-2vB"/>
+                <constraint firstAttribute="bottom" secondItem="Ezs-pg-9oU" secondAttribute="bottom" id="Yhs-F8-rHF"/>
+            </constraints>
+            <connections>
+                <outlet property="mColorWell" destination="Ezs-pg-9oU" id="Hy4-7I-NrQ"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="-109"/>
+        </customView>
+    </objects>
+</document>

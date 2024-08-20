@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCPopupMenuCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-06-NyJ">
+                    <rect key="frame" x="-2" y="-3" width="256" height="25"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="egN-dv-WmB" id="HwJ-Oy-jaw">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="zwK-Nf-MNZ">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="egN-dv-WmB"/>
+                                <menuItem title="Item 2" id="Qfx-p2-qX6"/>
+                                <menuItem title="Item 3" id="XRg-su-k1O"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="buttonAction:" target="c22-O7-iKe" id="SRH-8b-hGp"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fi7-06-NyJ" secondAttribute="trailing" id="17S-v3-jsg"/>
+                <constraint firstItem="fi7-06-NyJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="5sp-mI-P7s"/>
+                <constraint firstAttribute="bottom" secondItem="fi7-06-NyJ" secondAttribute="bottom" id="YN5-6H-JkR"/>
+                <constraint firstItem="fi7-06-NyJ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="msk-Aj-uUR"/>
+            </constraints>
+            <connections>
+                <outlet property="mPopupButton" destination="fi7-06-NyJ" id="kgz-5C-rLy"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="27.5"/>
+        </customView>
+    </objects>
+</document>

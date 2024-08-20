@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCTextEditCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpv-VH-8yg">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <clipView key="contentView" drawsBackground="NO" id="5DI-ey-d7K">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="Kxx-qY-Ucu">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="480" height="272"/>
+                                <size key="maxSize" width="480" height="10000000"/>
+                                <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </textView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="arq-Q0-9G9">
+                        <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="DYy-5F-6rw">
+                        <rect key="frame" x="464" y="0.0" width="16" height="272"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xpv-VH-8yg" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="3bx-WJ-DCj"/>
+                <constraint firstItem="xpv-VH-8yg" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="AJD-FR-95G"/>
+                <constraint firstAttribute="trailing" secondItem="xpv-VH-8yg" secondAttribute="trailing" id="Auk-3v-Jmt"/>
+                <constraint firstAttribute="trailing" secondItem="xpv-VH-8yg" secondAttribute="trailing" id="BZG-2t-2sH"/>
+                <constraint firstItem="xpv-VH-8yg" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="fRe-OR-90Y"/>
+                <constraint firstItem="xpv-VH-8yg" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="o4I-ef-KAD"/>
+                <constraint firstAttribute="bottom" secondItem="xpv-VH-8yg" secondAttribute="bottom" id="oJG-IO-2Gv"/>
+                <constraint firstAttribute="bottom" secondItem="xpv-VH-8yg" secondAttribute="bottom" id="rPp-YQ-g9p"/>
+            </constraints>
+            <connections>
+                <outlet property="mScrollView" destination="xpv-VH-8yg" id="MUr-NB-n32"/>
+                <outlet property="mTextView" destination="Kxx-qY-Ucu" id="1Bi-at-m6j"/>
+            </connections>
+            <point key="canvasLocation" x="-194" y="196"/>
+        </customView>
+    </objects>
+</document>

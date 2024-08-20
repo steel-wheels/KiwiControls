@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCStackViewCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fillEqually" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-s6-shA">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NA8-s6-shA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="7Wk-sI-yas"/>
+                <constraint firstAttribute="trailing" secondItem="NA8-s6-shA" secondAttribute="trailing" id="L9d-zR-qkH"/>
+                <constraint firstItem="NA8-s6-shA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="P7a-Ce-QgP"/>
+                <constraint firstAttribute="trailing" secondItem="NA8-s6-shA" secondAttribute="trailing" id="QwY-p1-mnr"/>
+                <constraint firstAttribute="bottom" secondItem="NA8-s6-shA" secondAttribute="bottom" id="Rxx-UA-RIy"/>
+                <constraint firstItem="NA8-s6-shA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="U4R-33-jun"/>
+                <constraint firstItem="NA8-s6-shA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="bFb-5B-awJ"/>
+                <constraint firstAttribute="bottom" secondItem="NA8-s6-shA" secondAttribute="bottom" id="oZ0-ho-smk"/>
+            </constraints>
+            <connections>
+                <outlet property="mStackView" destination="NA8-s6-shA" id="PcR-7k-BlS"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="120"/>
+        </customView>
+    </objects>
+</document>

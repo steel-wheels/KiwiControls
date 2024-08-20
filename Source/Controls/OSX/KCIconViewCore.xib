@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="KCIconViewCore" customModule="KiwiControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-qR-Qme">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="133"/>
+                    <buttonCell key="cell" type="square" title="Untitled" bezelStyle="shadowlessSquare" imagePosition="above" alignment="center" transparent="YES" imageScaling="proportionallyUpOrDown" inset="2" id="f16-Oj-O0Z" customClass="KCIconButtonCell" customModule="KiwiControls" customModuleProvider="target">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonPressed:" target="c22-O7-iKe" id="7Uv-9f-nTo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VfZ-qR-Qme" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Faf-Nl-NCH"/>
+                <constraint firstAttribute="trailing" secondItem="VfZ-qR-Qme" secondAttribute="trailing" id="KTY-t1-2hU"/>
+                <constraint firstItem="VfZ-qR-Qme" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="YkW-a2-67q"/>
+                <constraint firstAttribute="bottom" secondItem="VfZ-qR-Qme" secondAttribute="bottom" id="jJm-3J-Iqt"/>
+            </constraints>
+            <connections>
+                <outlet property="mImageButton" destination="VfZ-qR-Qme" id="jmj-4L-g7w"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="113.5"/>
+        </customView>
+    </objects>
+</document>

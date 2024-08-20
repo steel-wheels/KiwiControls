@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UTGraphicsView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDh-Sa-ff8" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="16" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5T7-Wk-YcZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="lFG-NE-CBT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4f-Pw-EsT" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="64" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PUL-ZG-Eaw"/>
+                                    <constraint firstAttribute="width" constant="40" id="WbR-1t-yOv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyI-Ig-0YF" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="112" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LYT-Oa-x8L"/>
+                                    <constraint firstAttribute="width" constant="40" id="MLe-FI-qrf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYM-5p-ght" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="160" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AQL-Z7-dnF"/>
+                                    <constraint firstAttribute="width" constant="40" id="BEX-z4-FLK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q46-LK-iBQ" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="343" id="FQp-8G-5Gr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-T0-VVO" customClass="KCLayerView" customModule="KiwiControls">
+                                <rect key="frame" x="208" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2vo-xs-B2h"/>
+                                    <constraint firstAttribute="height" constant="40" id="Tvc-Be-jRY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q46-LK-iBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2a6-8h-Qkc"/>
+                            <constraint firstItem="zyI-Ig-0YF" firstAttribute="leading" secondItem="q4f-Pw-EsT" secondAttribute="trailing" constant="8" id="5cp-AW-Nsk"/>
+                            <constraint firstItem="Q46-LK-iBQ" firstAttribute="top" secondItem="eYM-5p-ght" secondAttribute="bottom" constant="102" id="F4f-Nl-ghe"/>
+                            <constraint firstItem="yDh-Sa-ff8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kpa-hL-O1X"/>
+                            <constraint firstItem="fbz-T0-VVO" firstAttribute="leading" secondItem="eYM-5p-ght" secondAttribute="trailing" constant="8" id="M6N-sM-VWQ"/>
+                            <constraint firstItem="q4f-Pw-EsT" firstAttribute="leading" secondItem="yDh-Sa-ff8" secondAttribute="trailing" constant="8" id="Rqn-ei-gT3"/>
+                            <constraint firstItem="eYM-5p-ght" firstAttribute="leading" secondItem="zyI-Ig-0YF" secondAttribute="trailing" constant="8" id="XP8-0h-Gi5"/>
+                            <constraint firstItem="fbz-T0-VVO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z9F-rR-VSC"/>
+                            <constraint firstItem="yDh-Sa-ff8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="duM-1J-KrC"/>
+                            <constraint firstItem="Q46-LK-iBQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jD5-Dv-b6V"/>
+                            <constraint firstItem="q4f-Pw-EsT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oDg-DC-4AT"/>
+                            <constraint firstItem="zyI-Ig-0YF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pNC-Sv-LLV"/>
+                            <constraint firstItem="eYM-5p-ght" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qyT-VH-Smt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mGraphicsView" destination="Q46-LK-iBQ" id="8Ix-KE-mG8"/>
+                        <outlet property="mSelectionView" destination="fbz-T0-VVO" id="Gsr-8n-poB"/>
+                        <outlet property="mSymbol0View" destination="yDh-Sa-ff8" id="7Tg-zE-16x"/>
+                        <outlet property="mSymbol1View" destination="q4f-Pw-EsT" id="P52-N8-b51"/>
+                        <outlet property="mSymbol2View" destination="zyI-Ig-0YF" id="NZr-VH-8QW"/>
+                        <outlet property="mSymbol3View" destination="eYM-5p-ght" id="DUi-ZH-xHB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

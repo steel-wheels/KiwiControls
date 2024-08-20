@@ -1,0 +1,35 @@
+{
+  class:	"TableData",
+  format: [
+    {
+      name: "c0"
+      type: "s"
+    },
+    {
+      name: "c1"
+      type: "s"
+    },
+    {
+      name: "c2"
+      type: "s"
+    }
+  ],
+  values: [
+    {
+	c0: "data-0-0",
+	c1: "data-0-1",
+	c2: "data-0-2"
+    },
+    {
+	c0: "data-1-0",
+	c1: "data-1-1",
+	c2: "data-1-2"
+    },
+    {
+	c0: "data-2-0",
+	c1: "data-2-1",
+	c2: "data-2-2"
+    }
+  ]
+}
+
