@@ -560,9 +560,9 @@ open class KCTextEditCore : KCCoreView, KCTextViewDelegate, NSTextStorageDelegat
 	}}
 
 	#if os(OSX)
-    open override var fittingSize: CGSize { get {
-        return contentsSize()
-    }}
+        open override var fittingSize: CGSize { get {
+                return contentsSize()
+        }}
 	#else
 	open override func sizeThatFits(_ size: CGSize) -> CGSize {
 		return adjustContentsSize(size: size)
