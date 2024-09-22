@@ -2,7 +2,7 @@
  * @file	KCTextEdit.swift
  * @brief	Define KCTextEdit class
  * @par Copyright
- *   Copyright (C) 2023 Steel Wheels Project
+ *   Copyright (C) 2023-2024 Steel Wheels Project
  */
 
 #if os(OSX)
@@ -132,7 +132,7 @@ open class KCTextEditCore : KCCoreView, KCTextViewDelegate, NSTextStorageDelegat
 
 	public func updateAppearance() {
 		let vpref = CNPreference.shared.viewPreference
-        let fgcolor = vpref.terminalForegroundColor()
+                let fgcolor = vpref.terminalForegroundColor()
 		let bgcolor = vpref.terminalBackgroundColor()
 		self.pExecute(escapeCode: .foregroundColor(fgcolor))
 		self.pExecute(escapeCode: .backgroundColor(bgcolor))
