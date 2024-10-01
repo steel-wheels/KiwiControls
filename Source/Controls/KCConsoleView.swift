@@ -16,8 +16,8 @@ open class KCConsoleView : KCTextEdit
 {
 	private var mOutputPipe:	Pipe
 	private var mErrorPipe:		Pipe
-	private var mOutputFile:	CNFile
-	private var mErrorFile:		CNFile
+	private var mOutputFile:	CNOutputFile
+	private var mErrorFile:		CNOutputFile
 	private var mConsole:		CNFileConsole
 
 	public var console:		CNFileConsole { get { return mConsole }}
@@ -28,9 +28,9 @@ open class KCConsoleView : KCTextEdit
 		mErrorPipe		= Pipe()
 		mOutputFile		= mOutputPipe.fileForWriting(fileType: .standardIO)
 		mErrorFile		= mErrorPipe.fileForWriting(fileType: .standardIO)
-		mConsole		= CNFileConsole(input: CNStandardFiles.shared.input,
+		mConsole		= CNFileConsole(input:  CNStandardFiles.input,
 							output: mOutputFile,
-							error: mErrorFile)
+							error:  mErrorFile)
 		super.init(frame: frame)
 		setupView()
 		setupFileStream()
@@ -41,9 +41,9 @@ open class KCConsoleView : KCTextEdit
 		mErrorPipe		= Pipe()
 		mOutputFile		= mOutputPipe.fileForWriting(fileType: .standardIO)
 		mErrorFile		= mErrorPipe.fileForWriting(fileType: .standardIO)
-		mConsole		= CNFileConsole(input: CNStandardFiles.shared.input,
+		mConsole		= CNFileConsole(input:  CNStandardFiles.input,
 							output: mOutputFile,
-							error: mErrorFile)
+							error:  mErrorFile)
 		super.init(frame: frame)
 		setupView()
 		setupFileStream()
@@ -55,9 +55,9 @@ open class KCConsoleView : KCTextEdit
 		mErrorPipe		= Pipe()
 		mOutputFile		= mOutputPipe.fileForWriting(fileType: .standardIO)
 		mErrorFile		= mOutputPipe.fileForWriting(fileType: .standardIO)
-		mConsole		= CNFileConsole(input: CNStandardFiles.shared.input,
+		mConsole		= CNFileConsole(input:  CNStandardFiles.input,
 							output: mOutputFile,
-							error: mErrorFile)
+							error:  mErrorFile)
 		super.init(coder: coder)
 		setupView()
 		setupFileStream()

@@ -18,9 +18,9 @@ open class KCTerminalView : KCTextEdit
 	private var mOutputPipe:	Pipe
 	private var mErrorPipe:		Pipe
 
-	private var mInputFile:		CNFile
-	private var mOutputFile:	CNFile
-	private var mErrorFile:		CNFile
+	private var mInputFile:		CNInputFile
+	private var mOutputFile:	CNOutputFile
+	private var mErrorFile:		CNOutputFile
 
 	private var mConsole:		CNFileConsole
 

@@ -20,6 +20,7 @@ open class KCRadioButtonCore: KCCoreView
 	private var mState: CNButtonState		 = .hidden
 	private var mCallbackFunction: CallbackFunction? = nil
 	private var mMinLabelWidth: Int			 = 8
+        private var mSymbolManager                       = CNSymbolImages()
 
 	#if os(OSX)
 	@IBOutlet weak var mRadioButton: NSButton!
@@ -46,7 +47,7 @@ open class KCRadioButtonCore: KCCoreView
 
 	#if os(iOS)
 	private func setButtonSymbol(symbol sym: CNSymbol, state stat: UIControl.State) {
-        let img = CNSymbolImages.shared.load(name: sym.name, size: .regular)
+                let img = mSymbolManager.load(name: sym.name, size: .regular)
 		mButton.setImage(img, for: stat)
 		mButton.setTitle("", for: stat)
 	}

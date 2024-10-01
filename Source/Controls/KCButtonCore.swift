@@ -67,7 +67,8 @@ public class KCButtonCore: KCCoreView
 					mButton.imagePosition = .noImage
 				#endif
 			case .symbol(let sym):
-                let img = CNSymbolImages.shared.load(name: sym.name, size: .regular)
+                                let symmgr = CNSymbolImages()
+                                let img = symmgr.load(name: sym.name, size: .regular)
 				#if os(OSX)
 					mButton.bezelStyle = .regularSquare
 					mButton.image = img

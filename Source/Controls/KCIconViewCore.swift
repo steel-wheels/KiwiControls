@@ -31,9 +31,10 @@ open class KCIconViewCore : KCCoreView
     @IBOutlet weak var mImageButton: UIButton!
 #endif
 
-    private var mIdNumber:      Int         = 0
-    private var mTargetSize:    CGSize?     = nil
-    private var mSymbol:        CNSymbol    = .character
+        private var mIdNumber:      Int         = 0
+        private var mTargetSize:    CGSize?     = nil
+        private var mSymbolManager              = CNSymbolImages()
+        private var mSymbol:        CNSymbol    = .character
 
     public func setup(frame frm: CGRect){
         super.setup(isSingleView: true, coreView: mImageButton)
@@ -126,7 +127,7 @@ open class KCIconViewCore : KCCoreView
     }
 
     private func setSymbol(_ sym: CNSymbol) {
-        let img = CNSymbolImages.shared.load(name: sym.name, size: .regular)
+        let img = mSymbolManager.load(name: sym.name, size: .regular)
         let padimg = img.expand(xPadding: 12.0, yPadding: 12.0)
         let extimg: CNImage
         if let targsize = mTargetSize {

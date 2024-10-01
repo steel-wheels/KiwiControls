@@ -33,18 +33,19 @@ open class KCCollectionViewCore: KCCoreView
     static let InitialNumberOfColumuns = 2
     #endif
 
-    private var mCollectionData     = CNCollectionData()
-    private var mNumberOfColumns    = KCCollectionViewCore.InitialNumberOfColumuns
-    private var mItems: Array<KCCollectionViewItem>         = []
-    private var mButtonPressedCallback: CallbackFunction?   = nil
+        private var mCollectionData     = CNCollectionData()
+        private var mNumberOfColumns    = KCCollectionViewCore.InitialNumberOfColumuns
+        private var mItems: Array<KCCollectionViewItem>         = []
+        private var mButtonPressedCallback: CallbackFunction?   = nil
 
-    private let mSymbolSize: CNSymbolSize               = .regular
+        private var mSymbolManager              = CNSymbolImages()
+        private let mSymbolSize: CNSymbolSize   = .regular
 
-    #if os(OSX)
-    private var mLayout = NSCollectionViewFlowLayout()
-    #else
-    private var mLayout = UICollectionViewFlowLayout()
-    #endif
+        #if os(OSX)
+        private var mLayout = NSCollectionViewFlowLayout()
+        #else
+        private var mLayout = UICollectionViewFlowLayout()
+        #endif
 
     public func setup(frame frm: CGRect){
         super.setup(isSingleView: true, coreView: mCollectionView)
@@ -73,14 +74,14 @@ open class KCCollectionViewCore: KCCoreView
     }
 
     public func set(icons icns: Array<CNIcon>){
-        mCollectionData.set(icons: icns)
+            mCollectionData.set(icons: icns)
 
-        /* get max symbol size */
-        for icon in icns {
-            let symname = icon.symbol.name
-            let _ = CNSymbolImages.shared.load(name: symname, size: mSymbolSize)
-        }
-        let iconsize = CNSymbolImages.shared.maxSize(symbolSize: mSymbolSize)
+            /* get max symbol size */
+            for icon in icns {
+                    let symname = icon.symbol.name
+                    let _ = mSymbolManager.load(name: symname, size: mSymbolSize)
+            }
+            let iconsize = mSymbolManager.maxSize(symbolSize: mSymbolSize)
 
         /* allocate items and get max cell size */
         mItems = []
