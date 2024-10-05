@@ -75,7 +75,7 @@ public class KCLogWindowConsole: CNConsole
 
 	deinit {
 		/* Connect log buffer to this window */
-		CNLogManager.shared.popConsole()
+		CNLogManager.popConsole()
 	}
 
 	private func setup(){
@@ -83,7 +83,7 @@ public class KCLogWindowConsole: CNConsole
 		/* Push log console */
 		let cont    = allocController()
 		let console = KCLogWindowConsole(console: cont.console, manager: self)
-		CNLogManager.shared.pushConsone(console: console)
+                CNLogManager.pushConsole(console)
 		#endif
 	}
 
